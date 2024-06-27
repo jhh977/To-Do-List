@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     display: flex;
     flex-direction: row;
@@ -9,8 +14,10 @@ body{
     width: 20vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     margin: 0;
-    justify-content: center;
+    justify-content: space-between;
 
 }
 
@@ -20,11 +27,51 @@ body{
     align-items: center;
     height: 20vh;
 }
+
 .logo-name h1{
     color: white;
 
 }
+
 .logo-name img{
     width: 100px;
-    margin: 20px;
+    margin: 20px 20px 20px 0;
+}
+
+.links ul{
+    margin-bottom: 47vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 2px solid white;
+}
+
+.links li{
+    
+    text-align: center;
+    font-size:xx-large;
+    border-bottom: 2px solid white;
+    padding: 10px;
+
+}
+
+.links a{
+    text-decoration: none;
+    color: white;
+}
+
+.active{
+    font-weight: 900;
+    background-color: rgb(42, 42, 42);
+}
+.social-media-links{
+    justify-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.social-media-links img{
+    width: 30px;
+    margin: 0 5px 0 5px;
 }
