@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+}
+
+.side-bar{
+    background-color: black;
+    width: 20vw;
+    height: 100vh;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+
+}
+
+.logo-name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 20vh;
+}
+.logo-name h1{
+    color: white;
+
+}
+.logo-name img{
+    width: 100px;
+    margin: 20px;
+}
