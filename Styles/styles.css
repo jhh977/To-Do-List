@@ -9,6 +9,8 @@ body{
     margin: 0px;
 }
 
+/* Side bar */
+
 .side-bar{
     background-color: black;
     width: 20vw;
@@ -35,7 +37,11 @@ body{
 
 .logo-name img{
     width: 100px;
-    margin: 20px 20px 20px 0;
+    margin: 20px 5px 20px 0;
+}
+
+.name{
+    margin-right: 5px ;
 }
 
 .links ul{
@@ -76,15 +82,7 @@ body{
     margin: 0 5px 0 5px;
 }
 
-.container{
-    width: 100%;
-}
-
-.navbar{
-    background-color: rgb(255, 200, 0);
-    border-bottom: 2px solid black;
-    width: 100%;
-}
+/* Side bar responsiveness */
 
 .open-side-bar{
     display: none;
@@ -102,3 +100,75 @@ body{
     }
     
 }
+
+/* main page */
+
+.container{
+    width: 100%;
+}
+
+.navbar{
+    background-color: rgb(255, 200, 0);
+    border-bottom: 2px solid black;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.time-user{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.time-user img{
+    width: 30px;
+    border-radius: 100%;
+    border: 1px solid black;
+    margin-left:5px;
+}
+
+.tasks{
+    margin: 10px 0 10px 10px;
+}
+.task-container{
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.status{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 400px;
+}
+
+.done-dot {
+    height: 25px;
+    width: 25px;
+    background-color: #00ff08;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: inline-block;
+  }
+.pending-dot {
+    height: 25px;
+    width: 25px;
+    background-color: #fff700;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: inline-block;
+  }
+.missed-dot {
+    height: 25px;
+    width: 25px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    border: 1px solid black;
+    display: inline-block;
+  }
