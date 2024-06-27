@@ -75,3 +75,30 @@ body{
     width: 30px;
     margin: 0 5px 0 5px;
 }
+
+.container{
+    width: 100%;
+}
+
+.navbar{
+    background-color: rgb(255, 200, 0);
+    border-bottom: 2px solid black;
+    width: 100%;
+}
+
+.open-side-bar{
+    display: none;
+}
+
+@media screen and (max-width: 600px){
+    .show-hide{
+        display: none;
+    }
+    .side-bar{
+        width: 60vw;
+    }
+    .open-side-bar{
+        display: inline;
+    }
+    
+}
