@@ -114,10 +114,34 @@ body{
 }
 
 .task{
-    border: 2px solid black;
+    border: 2px solid;
     border-radius: 10px;
-    padding: 0 5px 5px 5px;
+    padding: 5px;
     margin-right: 5px;
+}
+.task-top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.task-top button{
+}
+
+.done{
+    border-color: #00ff08;
+    color: #00ff08;
+
+}
+.pending{
+    border-color: #fff700;
+    color: #fff700;
+}
+
+.missed{
+    border-color: #ff0000;
+    color: #ff0000;
 }
 
   @media screen and (max-width:600px) {
@@ -128,4 +152,15 @@ body{
     .task{
         margin-bottom: 5px;
     }
+  }
+
+  .form-div{
+    width: 25vw;
+    margin-left: 10px;
+    font-size: large;
+
+  }
+  #addTaskForm{
+    display: flex;
+    flex-direction: column;
   }
