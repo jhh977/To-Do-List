@@ -81,29 +81,51 @@ body{
     display: inline-block;
   }
 
-  .tasks{
-    display: flex;
-    flex-direction: row;
-
-  }
   
   .v-line{
     border-left: 5px solid black;
-    margin-right: 10px;
     min-height: 82vh;
   }
 
-.done{
-    flex-grow: 1;
+.tasks{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
 }
 
-.not-done{
-    flex-grow: 1;
+.single-day{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.task-date{
+    border: 2px solid black;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    padding: 3px;
+}
+
+.task-list{
+    display: flex;
+    flex-direction: row;
+}
+
+.task{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 0 5px 5px 5px;
+    margin-right: 5px;
 }
 
   @media screen and (max-width:600px) {
     
-    .tasks{
-        flex-direction: column;
+.task-list{
+    flex-direction: column;
+}
+    .task{
+        margin-bottom: 5px;
     }
   }
